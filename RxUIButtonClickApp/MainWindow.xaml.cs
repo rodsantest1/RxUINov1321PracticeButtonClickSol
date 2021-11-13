@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace RxUIButtonClickApp
 {
     /// <summary>
@@ -33,6 +34,13 @@ namespace RxUIButtonClickApp
             {
                 Observable
                     .FromEventPattern(this.TestButton, nameof(this.TestButton.Click))
+                    .Select(_ => Unit.Default)
+                    .InvokeCommand(ViewModel.MyCommand);
+           
+                this
+                    .TestButton2
+                    .Events()
+                    .MouseEnter
                     .Select(_ => Unit.Default)
                     .InvokeCommand(ViewModel.MyCommand);
 
