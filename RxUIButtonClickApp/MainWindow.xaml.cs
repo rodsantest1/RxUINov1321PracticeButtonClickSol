@@ -3,6 +3,8 @@ using ReactiveUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reactive;
+using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,6 +28,18 @@ namespace RxUIButtonClickApp
         {
             InitializeComponent();
             ViewModel = new AppViewModel();
+
+            this.WhenActivated(disposableRegistration =>
+            {
+                Observable
+                    .FromEventPattern(this.TestButton, nameof(this.TestButton.Click))
+                    .Select(_ => Unit.Default)
+                    .InvokeCommand(ViewModel.MyCommand);
+
+                this.WhenAnyObservable(x => x.ViewModel.MyCommand).Subscribe(x => MessageBox.Show(x));
+
+            });
         }
+
     }
 }
