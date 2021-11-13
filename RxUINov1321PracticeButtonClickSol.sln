@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxUIButtonClickApp", "RxUIButtonClickApp\RxUIButtonClickApp.csproj", "{2616805B-9906-4DA7-840F-B8A688FA29DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F6E9B608-9232-49DE-AA15-5D287C8F83AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{2616805B-9906-4DA7-840F-B8A688FA29DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2616805B-9906-4DA7-840F-B8A688FA29DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2616805B-9906-4DA7-840F-B8A688FA29DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E9B608-9232-49DE-AA15-5D287C8F83AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E9B608-9232-49DE-AA15-5D287C8F83AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E9B608-9232-49DE-AA15-5D287C8F83AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E9B608-9232-49DE-AA15-5D287C8F83AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
